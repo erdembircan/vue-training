@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Erdem Bircan <erdem.erdembircan@gmail.com> (https://erdembircan.github.io/)",
   "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "eslint": "^5.5.0",
