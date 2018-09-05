@@ -1,0 +1,13 @@
+{
+  "name": "guide-take2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Erdem Bircan <erdem.erdembircan@gmail.com> (https://erdembircan.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "eslint": "^5.5.0",
+    "gulp": "^3.9.1",
+    "prettier-eslint": "^8.8.2"
+  }
+}
