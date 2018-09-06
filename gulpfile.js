@@ -5,8 +5,8 @@ gulp.task('browsersync::init', () => {
   browserSync.init({
     server: {
       baseDir: './',
-      directory: true,
     },
+    
   });
 });
 
@@ -16,7 +16,7 @@ gulp.task('browsersync::reload', () => {
 
 gulp.task('gulp::watch', () => {
   gulp.watch(
-    ['./**/*.js', './**/*.css', './**/*.html', './node_modules/**/*.*'],
+    ['./**/*.js', './**/*.css', './**/*.html', './index.html', './node_modules/**/*.*'],
     ['browsersync::reload'],
   );
 });
