@@ -1,0 +1,86 @@
+@import url("/css/theme.css");
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: var(--black);
+  font-family: var(--font-family);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.page_wrapper {
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "🔼 🔼" "👈 📄";
+}
+
+.up {
+  padding: 5px;
+  grid-area: 🔼;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  grid-auto-flow: column;
+}
+
+.nav_logo {
+  height: 60px;
+}
+
+.left {
+  grid-area: 👈;
+  overflow-y: scroll;
+}
+
+.content {
+  grid-area: 📄;
+  padding: 10px;
+}
+
+.left li {
+  list-style: none;
+  color: grey;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.left a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section_wrapper {
+  font-size: 1rem;
+}
+
+.content_link {
+  font-size: 0.8rem;
+}
+.active {
+  font-weight: bold;
+  color: green;
+}
+
+.code_execute_example {
+  padding: 10px;
+  font-size: 1.3rem;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.hide + ul {
+  display: none;
+}

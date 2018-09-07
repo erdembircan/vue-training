@@ -1,18 +1,39 @@
 <!DOCTYPE <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Vuejs Official Training</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="/js/main.js" />
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="/js/main.js"></script>
 </head>
 
 <body>
-  <h2>Hello World!</h2>
-  <div class="content"></div>
-
+  <div class="page_wrapper">
+    <div class="up">
+      <img src="/images/logo.png" class="nav_logo" />
+      <h3>VueJs Official Training</h3>
+    </div>
+    <div class="left">
+      <ul class="left_nav_root">
+        <h3>Essentials</h3>
+        <li>
+          <a href="/" class="section_wrapper">Introduction</a>
+          <ul>
+            <li><a class="content_link" href="/pages/declarative_rendering.html">Declarative Rendering</a></li>
+            <li><a class="content_link" href="/pages/conditionals_and_loops.html">Conditional and Loops</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/" class="section_wrapper">The Vue Instance</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content" id="content_dump"></div>
+  </div>
 </body>
 
 </html>
