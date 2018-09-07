@@ -45,6 +45,9 @@ body {
   grid-area: 👈;
   overflow-y: scroll;
 }
+.left > ul {
+  margin-right: 10px;
+}
 
 .content {
   grid-area: 📄;
@@ -55,7 +58,6 @@ body {
   list-style: none;
   color: grey;
   margin-top: 5px;
-  margin-right: 5px;
 }
 
 .left a {
@@ -63,13 +65,15 @@ body {
   color: inherit;
 }
 
-.section_wrapper {
+.section_wrapper{
   font-size: 1rem;
 }
 
 .content_link {
   font-size: 0.8rem;
+  text-decoration: none;
 }
+
 .active {
   font-weight: bold;
   color: green;

@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/main.css">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel='icon' href="/images/logo.png" type="image/png">
   <script src="/js/main.js"></script>
 </head>
 
@@ -21,19 +22,26 @@
       <ul class="left_nav_root">
         <h3>Essentials</h3>
         <li>
-          <a href="/" class="section_wrapper">Introduction</a>
+          <section-wrapper class="section_wrapper">Introduction</section-wrapper>
           <ul>
-            <li><a class="content_link" href="/pages/declarative_rendering.html">Declarative Rendering</a></li>
-            <li><a class="content_link" href="/pages/conditionals_and_loops.html">Conditional and Loops</a></li>
+            <li>
+              <content-link class='content_link' href="/pages/declarative_rendering.html" placeId='content_dump'>Declarative
+                Rendering</content-link>
+            </li>
+            <li>
+              <content-link class='content-link' href='/pages/conditionals_and_loops.html' placeId='content_dump'>Conditional
+                and Loops</content-link>
+            </li>
           </ul>
         </li>
         <li>
-          <a href="/" class="section_wrapper">The Vue Instance</a>
+          <section-wrapper class="section_wrapper">The Vue Instance</section-wrapper>
         </li>
       </ul>
     </div>
     <div class="content" id="content_dump"></div>
   </div>
+  <script src="/js/custom_elements.js"></script>
 </body>
 
 </html>

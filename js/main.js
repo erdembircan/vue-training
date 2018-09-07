@@ -10,7 +10,7 @@ window.onload = function windowLoaded() {
     const place = document.querySelector(checkedId);
 
     if (!place) {
-      console.log('not a valid element to dump content has been found :(');
+      console.log('not a valid element to dump content has been found 😢');
       return;
     }
 
@@ -28,20 +28,12 @@ window.onload = function windowLoaded() {
     });
   }
 
-  function setLinkActive(element) {
+  function setLinkActive(element, cssClass) {
     const currentActive = document.querySelector('.active');
-    if (currentActive) currentActive.classList.remove('active');
+    if (currentActive) currentActive.classList.remove(cssClass);
 
-    element.classList.add('active');
+    element.classList.add(cssClass);
   }
 
-  const contentLinks = document.querySelectorAll('.content_link');
-
-  Array.from(contentLinks).map((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      loadContent(e.target.href, 'content_dump');
-      setLinkActive(e.target);
-    });
-  });
+  window.helper = { fetchContentPages, setLinkActive, loadContent };
 };
