@@ -5,6 +5,8 @@ const app = new Vue({
   },
 });
 
-setTimeout(() => {
-  app.seen = false;
-}, 2000);
+const cb = document.getElementById('visibility_toggle');
+
+cb.addEventListener('change', (e) => {
+  app.seen = e.target.checked;
+});
