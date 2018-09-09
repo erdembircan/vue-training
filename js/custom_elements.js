@@ -26,6 +26,13 @@ class ContentLink extends HTMLElement {
       e.preventDefault();
       helper.loadContent(e.target.href, placeId);
       helper.setLinkActive(e.target.parentNode.parentNode.host, 'active');
+
+      helper.setLinkActive(
+        helper.upToId(e.currentTarget, 'section').firstChild.nextElementSibling,
+        'secActive',
+      );
+
+      helper.changeUrl(`?p=${this.getAttribute('href')}`);
     });
 
     shadow.appendChild(parsed.firstChild);
@@ -55,6 +62,7 @@ class SectionWrapper extends HTMLElement {
 
     parsed.firstChild.addEventListener('click', (e) => {
       e.preventDefault();
+      e.currentTarget.parentNode.host.classList.toggle('hide');
     });
 
     shadow.appendChild(parsed.firstChild);

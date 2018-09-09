@@ -33,11 +33,35 @@
   }
 
   function setLinkActive(element, cssClass) {
-    const currentActive = document.querySelector('.active');
+    const currentActive = document.querySelector(`.${cssClass}`);
     if (currentActive) currentActive.classList.remove(cssClass);
 
     element.classList.add(cssClass);
   }
 
-  return { setLinkActive, fetchContentPages, loadContent };
+  function upToId(element, id) {
+    let currentId = element.id;
+    let currentElement = element;
+    while (currentId !== id) {
+      if (currentElement.nodeType != 11) {
+        currentElement = currentElement.parentNode;
+      } else {
+        currentElement = currentElement.host;
+      }
+      currentId = currentElement.id;
+    }
+    return currentElement;
+  }
+
+  function changeUrl(url) {
+    window.history.pushState({}, '', url);
+  }
+
+  return {
+    setLinkActive,
+    fetchContentPages,
+    loadContent,
+    upToId,
+    changeUrl,
+  };
 }));
