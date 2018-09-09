@@ -19,6 +19,11 @@ body {
   box-sizing: inherit;
 }
 
+a{
+  text-decoration: none;
+}
+
+
 .page_wrapper {
   display: grid;
   height: 100%;
@@ -52,6 +57,7 @@ body {
 .content {
   grid-area: 📄;
   padding: 10px;
+  position: relative;
 }
 
 .left li {
@@ -74,7 +80,8 @@ body {
   text-decoration: none;
 }
 
-.active, .secActive {
+.active,
+.secActive {
   font-weight: bold;
   color: green;
 }
@@ -87,4 +94,24 @@ body {
 
 .hide + ul {
   display: none;
+}
+
+.about {
+  position: absolute;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.avatar{
+  background: #BADA55;
+  border-radius: 50%;
+  padding:10px;
+
 }
