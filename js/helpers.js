@@ -57,11 +57,27 @@
     window.history.pushState({}, '', url);
   }
 
+  function debounce(func, delay) {
+    let timeout;
+    return function inner(...args) {
+      const context = this;
+
+      const later = function deeper() {
+        timeout = null;
+        func.apply(context, args);
+      };
+
+      clearTimeout(timeout);
+      timeout = setTimeout(later, delay);
+    };
+  }
+
   return {
     setLinkActive,
     fetchContentPages,
     loadContent,
     upToId,
     changeUrl,
+    debounce,
   };
 }));

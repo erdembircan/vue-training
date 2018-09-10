@@ -19,10 +19,9 @@ body {
   box-sizing: inherit;
 }
 
-a{
+a {
   text-decoration: none;
 }
-
 
 .page_wrapper {
   display: grid;
@@ -90,6 +89,7 @@ a{
   padding: 10px;
   font-size: 1.3rem;
   background: rgba(0, 0, 0, 0.05);
+  margin: 10px;
 }
 
 .hide + ul {
@@ -98,8 +98,8 @@ a{
 
 .about {
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   display: grid;
@@ -109,9 +109,8 @@ a{
   align-items: center;
 }
 
-.avatar{
-  background: #BADA55;
+.avatar {
+  background: #bada55;
   border-radius: 50%;
-  padding:10px;
-
+  padding: 10px;
 }
