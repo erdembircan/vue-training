@@ -20,10 +20,16 @@
         {
           "section": "Computed Properties",
           "sub": ["Computed Properties", "Watchers"]
+        },
+        {
+          "section": "Class and Style Bindings",
+          "sub": ["Binding Html Classes", "Binding Inline Styles"]
+        },
+        {
+          "section": "Conditional Rendering",
+          "sub": ["v-if"]
         }
       ]
     }
   ]
-  
 }
-
