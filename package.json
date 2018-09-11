@@ -5,7 +5,7 @@
   "author": "Erdem Bircan <erdem.erdembircan@gmail.com> (https://erdembircan.github.io/)",
   "license": "MIT",
   "scripts": {
-    "start": "browser-sync start --server --files '**/*.html, **/*.js, **/*.css, !node_modules/**/*.*' --open '/'"
+    "start": "browser-sync start --server --files '**/*.html, **/*.js, **/*.css, data/**/*.*,!node_modules/**/*.*' --open '/'"
   },
   "devDependencies": {
     "browser-sync": "^2.24.7",

@@ -1,0 +1,28 @@
+{
+  "nav": [
+    {
+      "main": "Essentials",
+      "sections": [
+        {
+          "section": "Introduction",
+          "sub": [
+            "Declarative Rendering",
+            "Conditional and Loops",
+            "Handling User Input",
+            "Composing with Components"
+          ]
+        },
+
+        {
+          "section": "The Vue Instance",
+          "sub": ["Data and Methods", "Lifecycle"]
+        },
+        {
+          "section": "Computed Properties",
+          "sub": ["Computed Properties", "Watchers"]
+        }
+      ]
+    }
+  ]
+}
+

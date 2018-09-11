@@ -72,6 +72,13 @@
     };
   }
 
+  function parseNav(url) {
+    return fetchContentPages(url).then((resp) => {
+      const dataObj = JSON.parse(resp);
+      return dataObj;
+    });
+  }
+
   return {
     setLinkActive,
     fetchContentPages,
@@ -79,5 +86,6 @@
     upToId,
     changeUrl,
     debounce,
+    parseNav,
   };
 }));
