@@ -27,7 +27,11 @@
         },
         {
           "section": "Conditional Rendering",
-          "sub": ["v-if"]
+          "sub": ["v-if", "v-show"]
+        },
+        {
+          "section": "List Rendering",
+          "sub": ["Mapping an array to Elements"]
         }
       ]
     }
