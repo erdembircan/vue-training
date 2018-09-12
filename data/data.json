@@ -31,7 +31,11 @@
         },
         {
           "section": "List Rendering",
-          "sub": ["Mapping an array to Elements"]
+          "sub": [
+            "Mapping an array to Elements",
+            "Displaying Filtered Results",
+            "v-for with a Component"
+          ]
         }
       ]
     }
