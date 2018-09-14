@@ -136,3 +136,7 @@ a {
 .tab-button.active {
   background: white;
 }
+
+.tab-button:hover{
+  background: rgba(0, 0, 0, 0.25);
+}
