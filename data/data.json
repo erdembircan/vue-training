@@ -47,8 +47,14 @@
         },
         {
           "section": "Component Basics",
-          "sub": ["Base Example","Dynamic Components"]
+          "sub": ["Base Example", "Dynamic Components"]
         }
+      ]
+    },
+    {
+      "main": "Components In-Depth",
+      "sections": [
+        { "section": "Component Registration", "sub": ["Registration"] }
       ]
     }
   ]

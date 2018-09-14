@@ -12,6 +12,7 @@ window.onload = function load() {
 
     nav.map((val) => {
       const temp = `
+        <br>
         <h3>${val.main}</h3>
         ${val.sections
     .map(
@@ -37,7 +38,7 @@ window.onload = function load() {
 
     const range = document.createRange();
     range.setStart(navRoot, 0);
-    const ele = range.createContextualFragment(htmlArray.join());
+    const ele = range.createContextualFragment(htmlArray.join(''));
     navRoot.appendChild(ele);
 
     if (!page) return;
