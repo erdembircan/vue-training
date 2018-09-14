@@ -1,0 +1,16 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <button-counter></button-counter>
+    <button-counter></button-counter>
+    <button-counter></button-counter>
+    <hr>
+    <div :style="{fontSize : postFontSize + 'rem'}">
+      <blog-post @enlarge-text='postFontSize += $event' v-for='post in posts' :title='post.title' :key='post.id'></blog-post>
+    </div>
+    <hr>
+    <custom-input v-model='searchText'></custom-input>
+    <span>Search text: {{searchText}}</span>
+  </div>
+
+  <script src="/js/base_example.js" defer></script>
+</div>
