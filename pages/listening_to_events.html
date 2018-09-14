@@ -1,0 +1,21 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <button @click='counter += 1'>Add 1</button>
+    <p>The button above has been clicked {{counter}} {{counter > 0? 'times':'time'}}</p>
+    <hr>
+    <div>
+      <button @click='greet'>Greet</button>
+    </div>
+    <hr>
+    <div>
+      <button @click="say('hi')">Say Hi</button>
+      <button @click="say('what')">Say What</button>
+    </div>
+    <hr>
+    <button @click.prevent="warn('Form can not be submitted yet', $event)">Submit</button>
+    <hr>
+    <input autofocus='true' type="text" @keyup.enter="changeColor($event)" style="background: yellow; width: 100%" placeholder='press enter to change background color'>
+  </div>
+
+  <script src="/js/listening_to_events.js" defer></script>
+</div>
