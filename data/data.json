@@ -54,7 +54,10 @@
     {
       "main": "Components In-Depth",
       "sections": [
-        { "section": "Component Registration", "sub": ["Registration"] }
+        {
+          "section": "Component Registration",
+          "sub": ["Registration", "Custom Events"]
+        }
       ]
     }
   ]
