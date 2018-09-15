@@ -1,0 +1,12 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <todo-list :todos="todos">
+      <template slot-scope="{todo}">
+        <span v-if="todo.completed">✔️</span>
+        {{todo.text}}
+      </template>
+    </todo-list>
+  </div>
+
+  <script src="/js/scoped_slots.js" defer></script>
+</div>
