@@ -80,6 +80,19 @@
           "sub": ["Overview"]
         }
       ]
+    },
+    {
+      "main": "Reusability & Composition",
+      "sections": [
+        {
+          "section": "Mixins",
+          "sub": ["Basics"]
+        },
+        {
+          "section": "Custom Directives",
+          "sub": ["Intro"]
+        }
+      ]
     }
   ]
 }
