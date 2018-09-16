@@ -64,7 +64,11 @@
         },
         {
           "section": "Dynamic & Async Components",
-          "sub": ["keep-alive"]
+          "sub": ["keep-alive", "Async Components"]
+        },
+        {
+          "section": "Handling Edge Cases",
+          "sub": ["Programmatic Event Listeners"]
         }
       ]
     }
