@@ -71,6 +71,15 @@
           "sub": ["Programmatic Event Listeners"]
         }
       ]
+    },
+    {
+      "main": "Transitions & Animations",
+      "sections": [
+        {
+          "section": "Enter/Leave & List Transitions",
+          "sub": ["Overview"]
+        }
+      ]
     }
   ]
 }
