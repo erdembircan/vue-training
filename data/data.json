@@ -61,6 +61,10 @@
         {
           "section": "Slots",
           "sub": ["Slot Content", "Scoped Slots"]
+        },
+        {
+          "section": "Dynamic & Async Components",
+          "sub": ["keep-alive"]
         }
       ]
     }

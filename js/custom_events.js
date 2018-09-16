@@ -10,9 +10,22 @@ Vue.component('base-checkbox', {
     '<input type="checkbox" :checked = "checked" @change="$emit(\'change\', $event.target.checked)">',
 });
 
+Vue.component('text-document', {
+  props: {
+    title: String,
+  },
+  template: `<label>
+  {{title}}
+  <input type="text" @input="$emit('update:title',$event.target.value)">
+  </label>`,
+});
+
 const app = new Vue({
   el: '#app',
   data: {
     lovingVue: true,
+    doc: {
+      title: '',
+    },
   },
 });
