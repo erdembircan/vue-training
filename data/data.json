@@ -91,6 +91,14 @@
         {
           "section": "Custom Directives",
           "sub": ["Intro"]
+        },
+        {
+          "section": "Render Functions & JSX",
+          "sub": ["Render Functions"]
+        },
+        {
+          "section": "Filters",
+          "sub": ["Filters"]
         }
       ]
     }
