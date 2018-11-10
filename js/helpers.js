@@ -21,14 +21,26 @@
     fetchContentPages(url).then((resp) => {
       place.innerHTML = resp;
 
+      const lastIndex = url
+        .split('/')
+        .pop()
+        .match(/(.*).html/)[1];
+
+      const source = `/js/${lastIndex}.js`;
+      fetchContentPages(source).then((resp) => {
+        eval(resp);
+      });
+
       const scripts = place.getElementsByTagName('script');
 
-      Array.from(scripts).map((script) => {
-        const source = script.src;
-        fetchContentPages(source).then((resp) => {
-          eval(resp);
+      if (scripts) {
+        Array.from(scripts).map((script) => {
+          const scriptSource = script.src;
+          fetchContentPages(scriptSource).then((resp) => {
+            eval(resp);
+          });
         });
-      });
+      }
     });
   }
 
