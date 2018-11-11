@@ -5,7 +5,16 @@
       "sections": [
         {
           "section": "Introduction",
-          "sub": ["Declarative Rendering"]
+          "sub": [
+            "Declarative Rendering",
+            "Conditionals and Loops",
+            "Handling User Input",
+            "Composing with Components"
+          ]
+        },
+        {
+          "section": "The Vue Instance",
+          "sub": []
         }
       ]
     }
