@@ -14,7 +14,7 @@
         },
         {
           "section": "The Vue Instance",
-          "sub": []
+          "sub": ["Data and Methods"]
         }
       ]
     }
