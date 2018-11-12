@@ -19,7 +19,7 @@ const app = new Vue({
         this.answer = "questions usually ends with a '?'";
         return;
       }
-      this.answer = 'thinking...';
+      this.answer = 'thinking 🤔 ...';
       axios
         .get('https://yesno.wtf/api')
         .then((resp) => {
