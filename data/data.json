@@ -14,7 +14,7 @@
         },
         {
           "section": "The Vue Instance",
-          "sub": ["Data and Methods"]
+          "sub": ["Data and Methods", "Computed Properties and Watchers", "Watchers"]
         }
       ]
     }

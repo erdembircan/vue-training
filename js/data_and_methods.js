@@ -14,5 +14,5 @@ console.log(
 );
 
 app.$watch('a', (n, o) => {
-  console.log(`new value: ${n}\n` + `old value: ${o}`);
+  console.log(`new value: ${n}\nold value: ${o}`);
 });
