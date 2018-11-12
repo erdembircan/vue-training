@@ -19,6 +19,10 @@
         {
           "section": "Class and Style Bindings",
           "sub": ["Binding Html Classes"]
+        },
+        {
+          "section": "Conditional Rendering",
+          "sub": ["Conditional Rendering Examples"]
         }
       ]
     }
