@@ -1,4 +1,12 @@
 <div>
   <div id="app" class="code_execute_example">
+    <template v-if="ok">
+      <h1>Title</h1>
+      <p>some paragraph</p>
+      <p>event more paragraph</p>
+    </template>
+
+    <div v-if="Math.random() > .5">Now you see me</div>
+    <div v-else>Now you don't</div>
   </div>
 </div>

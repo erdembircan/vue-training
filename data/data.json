@@ -23,6 +23,10 @@
         {
           "section": "Conditional Rendering",
           "sub": ["Conditional Rendering Examples"]
+        },
+        {
+          "section": "List Rendering",
+          "sub": ["v-for"]
         }
       ]
     }
