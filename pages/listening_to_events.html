@@ -1,0 +1,15 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <form @submit.prevent="counter += 1">
+      <p>
+        The button below has been clicked for {{ counter }} time{{
+          counter > 1 ? "s" : ""
+        }}
+      </p>
+      <button>+</button>
+    </form>
+  </div>
+  <div id="app2" class="code_execute_example">
+    <p v-if="show" @keyup.f1="show=!show">Toggle me!!!</p>
+  </div>
+</div>

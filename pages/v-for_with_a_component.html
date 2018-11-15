@@ -1,0 +1,19 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <form @submit.prevent="addNewTodo">
+      <label for="new-todo">Add a todo</label>
+      <input v-model="newTodoText" placeholder="enter your todo" />
+      <button>Add Todo</button>
+    </form>
+    <ul v-if="todos.length">
+      <li
+        v-for="(todo,index) in todos"
+        is="todo-item"
+        :key="todo.id"
+        :title="todo.title"
+        @remove="todos.splice(index,1)"
+      ></li>
+    </ul>
+    <p v-else style="color:green">No todos left!!!</p>
+  </div>
+</div>

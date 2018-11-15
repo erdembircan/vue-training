@@ -14,7 +14,11 @@
         },
         {
           "section": "The Vue Instance",
-          "sub": ["Data and Methods", "Computed Properties and Watchers", "Watchers"]
+          "sub": [
+            "Data and Methods",
+            "Computed Properties and Watchers",
+            "Watchers"
+          ]
         },
         {
           "section": "Class and Style Bindings",
@@ -26,7 +30,11 @@
         },
         {
           "section": "List Rendering",
-          "sub": ["v-for"]
+          "sub": ["v-for", "v-for with a Component"]
+        },
+        {
+          "section": "Event Handling",
+          "sub": ["Listening to Events"]
         }
       ]
     }

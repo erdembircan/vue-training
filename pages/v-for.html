@@ -1,7 +1,26 @@
 <div>
   <div id="app" class="code_execute_example">
     <ul>
-      <li v-for="(item,index) in items">{{parentMessage}} - {{index}} - {{ item.message }} - </li>
+      <li v-for="(item,index) in items">
+        {{ parentMessage }} - {{ index }} - {{ item.message }} -
+      </li>
     </ul>
+  </div>
+  <div id="app2" class="code_execute_example">
+    <ol>
+      <li v-for="number in even(numbers)">{{ number }}</li>
+    </ol>
+  </div>
+  <div id="app3" class="code_execute_example">
+    <div>
+      <span v-for="n in 10">{{ n }}</span>
+    </div>
+  </div>
+  <div id="app4" class="code_execute_example">
+    <ul v-if="todos.length">
+      <li v-for="todo in todos">{{ todo }}</li>
+    </ul>
+    <p v-else>No todos left!</p>
+    <button @click = 'todos.splice(0)'>Clear</button>
   </div>
 </div>
