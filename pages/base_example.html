@@ -1,0 +1,11 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <button-counter></button-counter>
+  </div>
+  <div id="app2" class="code_execute_example">
+    <template v-if="posts.length > 0">
+      <blog-post v-for="p in posts" :key="p.id" :title="p.title"></blog-post>
+    </template>
+    <span v-else>no posts found</span>
+  </div>
+</div>

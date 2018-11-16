@@ -1,0 +1,23 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <input v-model="message" placeholder="enter your message" />
+    <p>Message is {{ message }}</p>
+  </div>
+  <div id="app2" class="code_execute_example">
+    <label for="jack">Jack</label>
+    <input type="checkbox" id="jack" value="Jack" v-model="checkedNames" />
+    <label for="john">John</label>
+    <input type="checkbox" id="john" value="John" v-model="checkedNames" />
+    <label for="mike">Mike</label>
+    <input type="checkbox" id="mike" value="Mike" v-model="checkedNames" />
+    <span>Checked names: {{ checkedNames }}</span>
+  </div>
+  <div id="app3" class="code_execute_example">
+    <select v-model="selected">
+      <option v-for="option in options" :value="option.value">{{
+        option.text
+      }}</option>
+    </select>
+    <span>Selected: {{ selected }}</span>
+  </div>
+</div>

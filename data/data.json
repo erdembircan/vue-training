@@ -35,6 +35,14 @@
         {
           "section": "Event Handling",
           "sub": ["Listening to Events"]
+        },
+        {
+          "section": "Form Input Bindings",
+          "sub": ["Basic Usage"]
+        },
+        {
+          "section": "Component Basics",
+          "sub": ["Base Example"]
         }
       ]
     }
