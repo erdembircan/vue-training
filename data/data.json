@@ -48,7 +48,7 @@
     },
     {
       "main": "Components in Depth",
-      "sections": []
+      "sections": [{ "section": "Props", "sub": ["Props"] }]
     }
   ]
 }
