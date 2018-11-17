@@ -1,5 +1,9 @@
 Vue.component('button-counter', {
-  template: "<button @click='count++'>{{count}}</button>",
+  template: `
+<div class= 'blog-post'>
+  <button @click='count++'>{{count}}</button>
+</div>
+  `,
   data() {
     return {
       count: 0,
@@ -12,7 +16,12 @@ const app = new Vue({
 });
 
 Vue.component('blog-post', {
-  template: "<h3 style='border: 1px solid red; padding: 5px'>{{title}}</h3>",
+  template: `
+<div style='border: 1px solid red; padding: 5px; margin: 5px'>
+  <h3 >{{title}}</h3>
+  <button @click="$emit('enlarge-text', .2)">Enlarge</button>
+</div>
+  `,
   props: ['title'],
 });
 
@@ -20,6 +29,7 @@ const app2 = new Vue({
   el: '#app2',
   data: {
     posts: [],
+    postFontSize: 1,
   },
   created() {
     const vm = this;
@@ -27,7 +37,28 @@ const app2 = new Vue({
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(resp => resp.json())
       .then((parsed) => {
-        vm.posts = parsed.slice(0, 10);
+        vm.posts = parsed.slice(0, 3);
       });
+  },
+  methods: {
+    fontSizeIn(val = 0.1) {
+      this.postFontSize += val;
+    },
+  },
+});
+
+Vue.component('search-component', {
+  template: `
+    <input :value='value'
+    @input="$emit('input', $event.target.value)"
+    >
+  `,
+  props: ['value'],
+});
+
+const app3 = new Vue({
+  el: '#app3',
+  data: {
+    searchText: '',
   },
 });

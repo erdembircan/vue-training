@@ -2,10 +2,23 @@
   <div id="app" class="code_execute_example">
     <button-counter></button-counter>
   </div>
-  <div id="app2" class="code_execute_example">
+  <div
+    id="app2"
+    class="code_execute_example"
+    :style="{fontSize: postFontSize + 'em'}"
+  >
     <template v-if="posts.length > 0">
-      <blog-post v-for="p in posts" :key="p.id" :title="p.title"></blog-post>
+      <blog-post
+        v-for="p in posts"
+        :key="p.id"
+        :title="p.title"
+        @enlarge-text="fontSizeIn"
+      ></blog-post>
     </template>
     <span v-else>no posts found</span>
+  </div>
+  <div id="app3" class="code_execute_example">
+    <search-component v-model="searchText"></search-component>
+    <p>Current search: {{ searchText }}</p>
   </div>
 </div>
