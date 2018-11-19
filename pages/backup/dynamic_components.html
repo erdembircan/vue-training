@@ -1,9 +1,0 @@
-<div>
-  <div id="app" class="code_execute_example">
-    <button v-for='component in components' :key='component.name' @click="currentComponent = component" :class="['tab-button', {active: currentComponent.name === component.name}]">{{component.name}}</button>
-
-    <component class="tab" :is='currentComponent'></component>
-  </div>
-
-  <script src="/js/dynamic_components.js" defer></script>
-</div>

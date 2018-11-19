@@ -48,7 +48,13 @@
     },
     {
       "main": "Components in Depth",
-      "sections": [{ "section": "Props", "sub": ["Props"] }]
+      "sections": [
+        { "section": "Props", "sub": ["Props"] },
+        {
+          "section": "Custom Events",
+          "sub": ["Customizing Component"]
+        }
+      ]
     }
   ]
 }
