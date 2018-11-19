@@ -1,0 +1,10 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <todo-list :todos="todos">
+      <template slot-scope="{todo}">
+        <span v-if="todo.completed" style="color:green"> ☑️️</span>
+        <span v-else style="color:red"> ❎ </span> {{ todo.text }}
+      </template>
+    </todo-list>
+  </div>
+</div>

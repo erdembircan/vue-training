@@ -53,6 +53,10 @@
         {
           "section": "Custom Events",
           "sub": ["Customizing Component"]
+        },
+        {
+          "section": "Slots",
+          "sub": ["Slot Content", "Slot Scope"]
         }
       ]
     }
