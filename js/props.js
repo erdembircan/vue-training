@@ -18,4 +18,9 @@ const app = new Vue({
     username: '',
   },
   props: ['base-input'],
+  methods: {
+    onFocus(e) {
+      console.log(`${e.tagName} is focused`);
+    },
+  },
 });
