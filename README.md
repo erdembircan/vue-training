@@ -1,11 +1,11 @@
 ## VueJs Official Guide - _Take2_
 
-After learning VueJs for the first time, i thought it will be a good idea to refresh it and put it in this repo. 🤔
+After learning <em style='color:green'>VueJs</em> for the first time, i thought it will be a good idea to refresh it and put it in this repo. 🤔
 
-``` bash
+```bash
 # install dependencies
-npm install
+yarn install
 
 # start dev server
-npm start
+yarn start
 ```
