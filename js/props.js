@@ -7,9 +7,22 @@ Vue.component('base-input', {
     <input
       v-bind="$attrs"
       :value="value"
-      @input = "$emit('input', $event.target.value)"
+      v-on='inputListeners'
     >
   </label>`,
+  computed: {
+    inputListeners() {
+      const vm = this;
+
+      const nativeListeners = {
+        input(e) {
+          vm.$emit('input', e.target.value);
+        },
+      };
+
+      return { ...this.$listeners, ...nativeListeners };
+    },
+  },
 });
 
 const app = new Vue({
@@ -20,7 +33,7 @@ const app = new Vue({
   props: ['base-input'],
   methods: {
     onFocus(e) {
-      console.log(`${e.tagName} is focused`);
+      console.log(`${e.target.tagName.toLowerCase()} is focused`);
     },
   },
 });
