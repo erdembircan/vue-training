@@ -1,0 +1,16 @@
+<div>
+  <div id="app" class="code_execute_example">
+    <div class="keepalive-container">
+      <div>
+        <button v-for="tab in tabs" :key="tab" @click="currentTab = tab">
+          {{ tab }}
+        </button>
+      </div>
+      <div class="content" style="box-shadow: inset 0 0 5px grey; max-width: 500px">
+        <keep-alive>
+          <component :is="currentComponent"></component>
+        </keep-alive>
+      </div>
+    </div>
+  </div>
+</div>

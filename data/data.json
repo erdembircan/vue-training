@@ -56,8 +56,24 @@
         },
         {
           "section": "Slots",
-          "sub": ["Slot Content", "Slot Scope"]
+          "sub": [
+            "Slot Content",
+            "Slot Scope",
+            "keep-alive",
+            "Async Components"
+          ]
         }
+      ]
+    },
+    {
+      "main": "Reusability & Composition",
+      "sections": [
+        { "section": "Custom Directives", "sub": ["Custom Directives"] },
+        {
+          "section": "Render Functions & JSX",
+          "sub": ["Render Function Basics"]
+        },
+        { "section": "Filters", "sub": ["filters"] }
       ]
     }
   ]
